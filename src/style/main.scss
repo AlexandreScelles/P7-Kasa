@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'Home';
+@import 'Header';
+@import 'Banner';
+@import 'Footer';
+
+
+html {
+	position: relative;
+	min-height: 100%;
+	margin: auto;
+	max-width: 1440px;
+	font-size: 18px;
+	color: $primary-color;
+	font-family: 'Montserrat-Regular';
+	background: $bg-clr;
+}
+
+h1,
+h2 {
+	font-family: 'Montserrat-Medium';
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: $primary-color;
+}

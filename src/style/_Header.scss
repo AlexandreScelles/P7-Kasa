@@ -1,0 +1,72 @@
+@import 'variables';
+@import 'fonts';
+
+@media(max-width: 768px) {
+    .header {
+        width: 98%!important;
+        &_logo {
+            &_img {
+                width: 7rem !important;
+            }
+        }
+        &_nav {
+            & ul {
+                padding-left: 0;
+            }
+            &_link {
+                &_navlink {
+                    padding: 3px 5px !important;
+                }
+            }
+        }
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+
+    &_logo {
+        &_img {
+            width: 160px;
+        }
+    }
+
+    &_nav {
+        & ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_link {
+            font-size: 19px;
+            margin: 16px 8px;
+
+            &_navlink {
+                padding: 3px 10px;
+            }
+
+            &_active {
+                font-family: 'Montserrat-Medium';
+                background: hsla(0, 100%, 82%, 0.2);
+                border-radius: 5px;
+                padding: 3px 10px;
+            }
+
+            &_inactive {
+                transition: all 350ms ease-in-out;
+                &:hover {
+                    font-family: 'Montserrat-Medium';
+                    background: hsla(0, 100%, 82%, 0.2);
+                    border-radius: 5px;
+                    padding: 3px 10px;
+                }
+            }
+        }
+    }
+}
+
