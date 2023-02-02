@@ -1,0 +1,23 @@
+@import 'variables';
+
+@media(max-width: 768px) {
+    .about_collapses {
+        width: 98% !important;
+        margin-top: 27px !important;
+    }
+}
+
+.about {
+    &_collapses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 96px;
+        &_content {
+            margin-bottom: 8px;
+            width: 95%;
+        }
+    }
+}
