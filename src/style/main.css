@@ -182,6 +182,11 @@
   filter: brightness(60%);
 }
 
+@media (max-width: 768px) {
+  .footer {
+    bottom: -95px !important;
+  }
+}
 .footer {
   position: absolute;
   left: 0;
