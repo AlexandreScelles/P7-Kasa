@@ -253,23 +253,6 @@
   text-decoration: underline;
 }
 
-@-webkit-keyframes slide {
-  0% {
-    overflow: hidden;
-    max-height: 0%;
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  50% {
-    max-height: 50%;
-  }
-  100% {
-    max-height: 100%;
-  }
-}
-
 @keyframes slide {
   0% {
     overflow: hidden;
@@ -288,8 +271,7 @@
 }
 @media (max-width: 768px) {
   .collapse_content {
-    -webkit-animation: slide 2s ease-in-out;
-            animation: slide 2s ease-in-out;
+    animation: slide 2s ease-in-out;
   }
 }
 .collapse_header {
@@ -323,8 +305,7 @@
   border-radius: 0 0 4px 4px;
   font-size: 16px;
   line-height: 23px;
-  -webkit-animation: slide 3s ease-in-out;
-          animation: slide 3s ease-in-out;
+  animation: slide 3s ease-in-out;
 }
 
 @media (max-width: 768px) {
